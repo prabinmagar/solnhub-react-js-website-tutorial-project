@@ -1,0 +1,52 @@
+.services .item{
+    padding: 40px;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+.services .item::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 5px;
+    background: rgb(87, 100, 222);
+    background: linear-gradient(45deg, rgba(87, 100, 222, 1) 0%, rgba(85, 179, 213, 1) 100%);
+    transition: var(--transition);
+}
+.services .item:hover::after{
+    width: 100%;
+}
+.services .item:hover .item-text{
+    color: var(--clr-white);
+}
+.services .item-icon{
+    font-size: 45px;
+}
+.services .item-list{
+    row-gap: 30px;
+}
+.services .item-link{
+    margin-top: 18px;
+    display: inline-block;
+    transition: var(--transition);
+}
+.services .item:hover .item-link{
+    color: var(--clr-white);
+}
+
+@media screen and (min-width: 768px){
+    .services .item-list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .services .item-list{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+}

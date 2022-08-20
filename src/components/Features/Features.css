@@ -1,0 +1,28 @@
+.features .item-icon{
+    transition: var(--transition);
+}
+.features .item-head{
+    padding: 18px 28px;
+    cursor: pointer;
+}
+.features .item-head-border{
+    border-bottom: 2px solid var(--clr-robin-blue);
+}
+.features .item-body{
+    margin-top: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms linear;
+}
+.features .item-body .text{
+    padding-bottom: 16px;
+}
+.features .item-body .text{
+    padding-bottom: 16px;
+}
+.features .item-body-show{
+    max-height: 200px;
+}
+.features .item-icon-rotate{
+    transform: rotate(45deg);
+}

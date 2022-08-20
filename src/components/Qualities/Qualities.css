@@ -1,0 +1,25 @@
+.qualities .section-t{
+    margin-bottom: 30px;
+}
+.qualities .item-icon{
+    margin-right: 28px;
+    font-size: 46px;
+}
+.qualities .item-title{
+    margin-top: 0;
+}
+.qualities .item-list{
+    row-gap: 30px;
+}
+.qualities-content{
+    row-gap: 60px;
+}
+
+
+@media screen and (min-width: 992px){
+    .qualities-content{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 60px;
+    }
+}
